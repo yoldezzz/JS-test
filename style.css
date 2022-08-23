@@ -1,0 +1,44 @@
+span {
+  color: black;
+}
+
+.like__btn {
+  padding: 10px 15px;
+  background: white;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  color: red;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: auto;
+  gap: 5px;
+}
+footer {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.card33 {
+  justify-content: center;
+  margin: auto;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  gap: 5px;
+}
