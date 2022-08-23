@@ -5,8 +5,10 @@ const btdelete = document.querySelectorAll(".delete");
 const card = document.querySelectorAll(".card");
 const price = document.querySelectorAll(".price");
 const sum = document.querySelector(".sum");
-const likeBtn = document.querySelector(".like__btn");
-const likeIcon = document.querySelector(".icon");
+const likeBtn = document.querySelectorAll(".like__btn");
+console.log(likeBtn);
+const likeIcon = document.querySelectorAll(".icon");
+console.log(likeIcon);
 
 console.log("buttonsminus");
 for (let i = 0; i < buttonsplus.length; i++) {
@@ -32,13 +34,14 @@ for (let i = 0; i < btdelete.length; i++) {
 }
 
 let clicked = false;
-
-likeBtn.addEventListener("click", function () {
-  if (!clicked) {
-    clicked = true;
-    likeIcon.innerHTML = `<i class="fas fa-thumbs-up"></i>`;
-  } else {
-    clicked = false;
-    likeIcon.innerHTML = `<i class="far fa-thumbs-up"></i>`;
-  }
-});
+for (let i = 0; i < likeBtn.length; i++) {
+  likeBtn[i].addEventListener("click", function () {
+    if (!clicked) {
+      clicked = true;
+      likeIcon[i].innerHTML = `<i class="fas fa-thumbs-up"></i>`;
+    } else {
+      clicked = false;
+      likeIcon[i].innerHTML = `<i class="far fa-thumbs-up"></i>`;
+    }
+  });
+}
